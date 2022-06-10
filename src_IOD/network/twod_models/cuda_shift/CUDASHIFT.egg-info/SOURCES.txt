@@ -1,0 +1,7 @@
+setup.py
+/home/calayzhou/zkl/CVPR2022_release/IOD-Video/src_IOD/network/twod_models/cuda_shift/src/shift_cuda.cpp
+/home/calayzhou/zkl/CVPR2022_release/IOD-Video/src_IOD/network/twod_models/cuda_shift/src/cuda/shift_kernel_cuda.cu
+CUDASHIFT.egg-info/PKG-INFO
+CUDASHIFT.egg-info/SOURCES.txt
+CUDASHIFT.egg-info/dependency_links.txt
+CUDASHIFT.egg-info/top_level.txt
