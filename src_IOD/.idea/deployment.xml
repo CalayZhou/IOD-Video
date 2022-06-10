@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" serverName="root@192.168.120.171:26" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="root@192.168.0.157:26">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/calayzhou/GMMExplore/MOC-Detector-master_20210831/src_IOD" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="root@192.168.0.157:26 (1)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/calayzhou/GMMExplore/MOC-Detector-master_20210831/src_IOD" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="root@192.168.120.171:26">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/calayzhou/GMMExplore/MOC-Detector-master_20210831/src_IOD_v5_0518" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>
