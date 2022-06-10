@@ -17,7 +17,7 @@ We endeavor on a rarely explored task named Insubstantial Object Detection (IOD)
 ```
 (1) amorphous shape with indistinct boundary;
 (2) similarity to surroundings;
-(3) absence in color.
+(3) absence in color;
 ```
 ## IOD-Video dataset
 
@@ -61,7 +61,7 @@ Please refer to [Dataset.md](./readme/Dataset.md) for more information.
 
 ### 3.Visualization
 
-Download [TEA_STA_K8S3_model_last.pth](https://drive.google.com/file/d/1MZBYKeoOr6OCAJkLNyRpcuqWvx_PdOyP/view?usp=sharing) to `./experiment/result_model/TEA_STA_K8S3/TEA_STA_K8S3_model_last.pth` and then run
+Download [TEA_STA_K8S3_model_last.pth](https://drive.google.com/file/d/1MZBYKeoOr6OCAJkLNyRpcuqWvx_PdOyP/view?usp=sharing) to `./src_IOD/experiment/result_model/TEA_STA_K8S3/TEA_STA_K8S3_model_last.pth` and then run
 
 ```bash
 cd src_IOD/vis
@@ -72,7 +72,7 @@ Please refer to [Dataset.md](./readme/Dataset.md) for more information.
 ### 4.Evaluation
 Download models from [Google Drive](https://drive.google.com/drive/folders/1n1VG_nWj5e57iKeJlVOJgs7zhoukailai4lQe7q7hn?usp=sharing),
 [Baidu Cloud,(code:`buac`)](https://pan.baidu.com/s/1ddV-u5RXnAsKtM8f19W7DA ) and [NJU Box](https://box.nju.edu.cn/d/7d89bd4796ab486b9886/) and put them to the 
-right places. For example, put [TEA_STA_K8S1_model_last.pth]() to `../experiment/result_model/TEA_STA_K8S1/TEA_STA_K8S1_model_last.pth` and run
+right places. For example, put [TEA_STA_K8S1_model_last.pth]() to `./src_IOD/experiment/result_model/TEA_STA_K8S1/TEA_STA_K8S1_model_last.pth` and run
 
 ~~~bash
 #inference
@@ -95,7 +95,7 @@ Please refer to [Train.md](./readme/Train.md) for more information.
 
 ## Acknowledgement
 
-Part of the code is adapted from previous works, [MOC](https://github.com/MCG-NJU/MOC-Detector/tree/master),
+Part of the code is adapted from previous works: [MOC](https://github.com/MCG-NJU/MOC-Detector/tree/master),
 [CenterNet](https://github.com/xingyizhou/CenterNet) (code base), [ACT](https://github.com/vkalogeiton/caffe/tree/act-detector) (evaluation), 
 [I3D, S3D, TAM](https://github.com/IBM/action-recognition-pytorch),
 [MSNet](https://github.com/arunos728/MotionSqueeze),

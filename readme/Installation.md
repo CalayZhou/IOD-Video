@@ -22,7 +22,7 @@
    conda install pytorch==1.8.1 torchvision cudatoolkit -c pytorch
    ~~~
    
-   The torch version is not supposed to be 1.8.1, it can be changed to any other version, only the cuda version is required to be same with `CUDA environment( /usr/local/cuda)` for [Pytorch Correlation extension](https://github.com/ClementPinard/Pytorch-Correlation-extension).
+   The torch version is not supposed to be 1.8.1, it can be changed to any other version, only the cuda version is required to be same with `CUDA environment(/usr/local/cuda)` for [Pytorch Correlation extension](https://github.com/ClementPinard/Pytorch-Correlation-extension).
 <br>
    
 3. Clone this repo (${MOC_ROOT} is the path to clone):
