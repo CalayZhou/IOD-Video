@@ -1,7 +1,7 @@
 # Visualization
 The visualization codes are located in [${IOD_ROOT}/src_IOD/vis](../src_IOD/vis). Following [MOC](https://github.com/MCG-NJU/MOC-Detector), a part of codes from `opts.py` and `datasets/dataset` are separated in `vis` for convenience.
 
-##1.Prepare the demo sample and model
+## 1.Prepare the demo sample and model
 1.1 demo samples
 
 Put the video sample in the path ``./src_IOD/vis/demo_video/xxxx.avi``. The 001_wild_static_vague.avi is provided by default.
@@ -10,7 +10,7 @@ Put the video sample in the path ``./src_IOD/vis/demo_video/xxxx.avi``. The 001_
 
 Since the 001_wild_static_vague.avi is in the test list of split 3 (Split3_testlist.txt), download [TEA_STA_K8S3_model_last.pth](https://drive.google.com/file/d/1MZBYKeoOr6OCAJkLNyRpcuqWvx_PdOyP/view?usp=sharing) to `./experiment/result_model/TEA_STA_K8S3/TEA_STA_K8S3_model_last.pth`.
 
-##2.Demo 
+## 2.Demo
 
 For short, run this script in `${IOD_ROOT}/src_IOD/vis`
 
@@ -46,12 +46,12 @@ If you set `--SimpleFrameProcess` to 0, it will link the boxes tubelet as  [MOC]
 ```
 
 >Do not set a ver large `--tube_vis_th` due to the property of the focal loss, otherwise it will eliminate most of detection tubelets.
-
 >`--frame_vis_th` will eliminate the lower score detection frames from a tubelet. On the one hand it can handle the action boundary but on the other hand, it may lead to the **discontinuity**.
  
 
  
-##3.Demo Results
+## 3.Demo Results
+
 The demo result can be found in `--inference_dir`(./src_IOD/vis/demo_video/xxxx_simpleframe_result.avi or xxxx_videotubes_result.avi).
 
 If you want to save the demo result as gif, you can try
@@ -59,4 +59,4 @@ If you want to save the demo result as gif, you can try
 cd src_IOD/vis
 python3 vis_det.py  --vname 001_wild_static_vague.avi  --save_gif
 ```
-The result will be found in /src_IOD/vis/demo_video
+The result will be found in `/src_IOD/vis/demo_video`.

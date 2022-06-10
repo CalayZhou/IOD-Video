@@ -11,23 +11,24 @@ TEA+STloss| 1 | 45.54% | 9.58% | 23.13% | 12.50% | 17.14%| [TEA_STA_K8S1_model_l
 TEA+STloss| 2 | 41.33% | 7.40% | 23.27% | 9.01% | 14.94%| [TEA_STA_K8S2_model_last.pth](https://drive.google.com/file/d/1CriQ-bQNucpwCFnPlExqNrN_iiQe4hUI/view?usp=sharing)
 TEA+STloss| 3 | 48.90% | 11.93% | 27.47% | 11.75% | 19.21%| [TEA_STA_K8S3_model_last.pth](https://drive.google.com/file/d/1MZBYKeoOr6OCAJkLNyRpcuqWvx_PdOyP/view?usp=sharing)
 TEA+STloss |average |  45.26% | 9.64% | 24.62% | 11.09% | 17.10% |
+
 *Model name:  `methods\_(loss)\_K?_S?\_model_last.pth`*
 
 We set opt.offset_h_ratio and opt.offset_w_ratio to 1 for stable convergence when K is small, so TEA+STAloss is slightly different from the original paper.
-All these models can be downloaded from [Google Drive](https://drive.google.com/drive/folders/1n1VG_nWj5e57iKeJlVOJgs7zhoukailai4lQe7q7hn?usp=sharing),
+All these models can be downloaded from [Google Drive](https://drive.google.com/drive/folders/1n1VG_nWj5e57iKeJlVOJgs74lQe7q7hn?usp=sharing),
 [Baidu Cloud,(code:`buac`)](https://pan.baidu.com/s/1ddV-u5RXnAsKtM8f19W7DA ) and [NJU Box](https://box.nju.edu.cn/d/7d89bd4796ab486b9886/).
 The final AP is averaged over three splits.
 
 
-## 2.Inference K=8 with TEA+STAloss
-please train or download the above model to the ${PATH_TO_SAVE_MODEL}, for example, download [TEA_STA_K8S1_model_last.pth](https://drive.google.com/file/d/1dvJZ6IQ8P8wyjf4QnVinbr9R7gT-LRe8/view?usp=sharing) to `../experiment/result_model/TEA_STA_K8S2/TEA_STA_K8S2_model_last.pth`
+## 2.Inference K=8 with TEA+STAloss and TEA
+Please train or download the above model to the ${PATH_TO_SAVE_MODEL}, for example, download [TEA_STA_K8S1_model_last.pth](https://drive.google.com/file/d/1dvJZ6IQ8P8wyjf4QnVinbr9R7gT-LRe8/view?usp=sharing) to `../experiment/result_model/TEA_STA_K8S2/TEA_STA_K8S2_model_last.pth`
 and run
 
-TEA+STAloss:
+**TEA+STAloss**:
 ~~~bash
 python3 det.py --task normal --K 8  --gpus 0,1  --batch_size 20 --master_batch 10  --num_workers 2 --rgb_model ../experiment/result_model/TEA_STA_K8S1/TEA_STA_K8S1_model_last.pth  --inference_dir ../result/inference_TLGDM_pkl1   --dataset IODVideo   --split  1  --arch TEAresnet_50
 ~~~
-TEA:
+**TEA**:
 ~~~bash
 python3 det.py --task normal --K 8  --gpus 0,1  --batch_size 20 --master_batch 10  --num_workers 2 --rgb_model ../experiment/result_model/TEA_MOV_K8S1/TEA_MOV_K8S1_model_last.pth  --inference_dir ../result/inference_TLGDM_pkl1   --dataset IODVideo   --split  1  --arch TEAresnet_50 --loss_option MOV 
 # ==============Args==============
