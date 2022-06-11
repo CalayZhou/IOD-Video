@@ -70,7 +70,7 @@ python3 vis_det.py  --vname 001_wild_static_vague.avi
 Please refer to [Dataset.md](./readme/Dataset.md) for more information.
 
 ### 4.Evaluation
-Download models from [Google Drive](https://drive.google.com/drive/folders/1n1VG_nWj5e57iKeJlVOJgs7zhoukailai4lQe7q7hn?usp=sharing),
+Download models from [Google Drive](https://drive.google.com/drive/folders/1n1VG_nWj5e57iKeJlVOJgs74lQe7q7hn?usp=sharing),
 [Baidu Cloud,(code:`buac`)](https://pan.baidu.com/s/1ddV-u5RXnAsKtM8f19W7DA ) and [NJU Box](https://box.nju.edu.cn/d/7d89bd4796ab486b9886/) and put them to the 
 right places. For example, put [TEA_STA_K8S1_model_last.pth](https://drive.google.com/file/d/1NECG8ML63tPEaH8D1U8diuyMSM6yncIc/view?usp=sharing) to `./src_IOD/experiment/result_model/TEA_STA_K8S1/TEA_STA_K8S1_model_last.pth` and run
 
