@@ -7,10 +7,10 @@ TEA |1 |  41.97% | 8.10% |  20.86% | 11.21% | 15.43% |[TEA_MOV_K8S1_model_last.p
 TEA |2 |  41.36% | 7.80% | 22.86% | 9.12% | 14.96% | [TEA_MOV_K8S2_model_last.pth](https://drive.google.com/file/d/1gEkKrCskuBozy02cNVwu1uo8h6Po9zmM/view?usp=sharing)
 TEA |3 |  43.24% | 10.08% |  25.18% | 9.51% |16.68% | [TEA_MOV_K8S3_model_last.pth](https://drive.google.com/file/d/1L-faMe_huC-NrdKblA7IbchuFJiEQi-7/view?usp=sharing)
 TEA |average |  42.19% | 8.66% |  22.97% | 9.95% | 15.69% |
-TEA+STloss| 1 | 45.54% | 9.58% | 23.13% | 12.50% | 17.14%| [TEA_STA_K8S1_model_last.pth](https://drive.google.com/file/d/1NECG8ML63tPEaH8D1U8diuyMSM6yncIc/view?usp=sharing)
+TEA+STloss| 1 | 45.35% | 8.73% | 22.70% | 12.02% | 16.60%| [TEA_STA_K8S1_model_last.pth](https://drive.google.com/file/d/1NECG8ML63tPEaH8D1U8diuyMSM6yncIc/view?usp=sharing)
 TEA+STloss| 2 | 41.33% | 7.40% | 23.27% | 9.01% | 14.94%| [TEA_STA_K8S2_model_last.pth](https://drive.google.com/file/d/1CriQ-bQNucpwCFnPlExqNrN_iiQe4hUI/view?usp=sharing)
 TEA+STloss| 3 | 48.90% | 11.93% | 27.47% | 11.75% | 19.21%| [TEA_STA_K8S3_model_last.pth](https://drive.google.com/file/d/1MZBYKeoOr6OCAJkLNyRpcuqWvx_PdOyP/view?usp=sharing)
-TEA+STloss |average |  45.26% | 9.64% | 24.62% | 11.09% | 17.10% |
+TEA+STloss |average |  45.19% | 9.35% | 24.48% | 10.93% | 16.92% |
 
 *Model name:  `methods\_(loss)\_K?_S?\_model_last.pth`*
 
