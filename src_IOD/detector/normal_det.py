@@ -43,7 +43,6 @@ class Detector(object):
         self.num_classes = opt.num_classes
         self.opt = opt
 
-
     def pre_process(self, images,K):
 
         #K = self.opt.K

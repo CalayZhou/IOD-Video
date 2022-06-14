@@ -103,7 +103,6 @@ class IOD_TDN_ResNet(nn.Module):
                 nn.init.xavier_normal_(m.weight)
                 nn.init.constant_(m.bias, 0)
 
-
     def forward(self, inputpre):
         x_list = []
         for i in range(self.num_segments):

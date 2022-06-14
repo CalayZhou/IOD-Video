@@ -19,7 +19,6 @@ All these models can be downloaded from [Google Drive](https://drive.google.com/
 [Baidu Cloud,(code:`buac`)](https://pan.baidu.com/s/1ddV-u5RXnAsKtM8f19W7DA ) and [NJU Box](https://box.nju.edu.cn/d/7d89bd4796ab486b9886/).
 The final AP is averaged over three splits.
 
-
 ## 2.Inference K=8 with TEA+STAloss and TEA
 Please train or download the above model to the ${PATH_TO_SAVE_MODEL}, for example, download [TEA_STA_K8S1_model_last.pth](https://drive.google.com/file/d/1dvJZ6IQ8P8wyjf4QnVinbr9R7gT-LRe8/view?usp=sharing) to `../experiment/result_model/TEA_STA_K8S2/TEA_STA_K8S2_model_last.pth`
 and run

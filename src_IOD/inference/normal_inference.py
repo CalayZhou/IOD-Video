@@ -24,7 +24,6 @@ def set_seed(seed):
     random.seed(seed)
     np.random.seed(seed)
 
-
 def worker_init_fn(dump):
     set_seed(GLOBAL_SEED)
 

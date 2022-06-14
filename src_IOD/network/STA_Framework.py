@@ -40,7 +40,6 @@ class STA_Framework(nn.Module):
             nn.ReLU(inplace=True))
 
     def forward(self, input):
-
         if self.arch == 'I3Dresnet' or self.arch ==  'S3Dresnet' or self.arch =='TAMresnet' or self.arch ==  'MSresnet' or \
                 self.arch == 'TEAresnet' or self.arch == 'TINresnet' or self.arch ==  'TSMresnet':
             inputlist = [input[i].unsqueeze(2) for i in range(self.K)]
