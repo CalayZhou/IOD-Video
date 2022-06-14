@@ -44,9 +44,9 @@ class Detector(object):
         self.opt = opt
 
 
-    def pre_process(self, images):
+    def pre_process(self, images,K):
 
-        K = self.opt.K
+        #K = self.opt.K
         images = [cv2.resize(im, (self.opt.resize_height, self.opt.resize_width), interpolation=cv2.INTER_LINEAR) for im in images]
 
         data = [np.empty((3 , self.opt.resize_height, self.opt.resize_width), dtype=np.float32) for i in range(K)]

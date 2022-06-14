@@ -32,6 +32,7 @@ class PrefetchDataset(torch.utils.data.Dataset):
     def __init__(self, opt, dataset, pre_process_func):
         self.pre_process_func = pre_process_func
         self.opt = opt
+        self.K = opt.K
         self.vlist = dataset._test_videos[dataset.split - 1]
         self.gttubes = dataset._gttubes
         self.nframes = dataset._nframes
@@ -58,16 +59,18 @@ class PrefetchDataset(torch.utils.data.Dataset):
                 images = []
                 for i in range(self.K+4):
                     frame_i = frame + i - 2
-                    video_len = self._nframes[v]
+                    video_len = self.nframes[v]
                     if(frame_i>video_len):
                         frame_i = video_len
                     if(frame_i<1):
                         frame_i = 1
                     image =cv2.imread(self.imagefile(v, frame_i )).astype(np.float32)
                     images.append(image)
+                K = self.K + 4
             else:
                 images = [cv2.imread(self.imagefile(v, frame + i)).astype(np.float32) for i in range(self.opt.K)]
-            images = self.pre_process_func(images)
+                K = self.K
+            images = self.pre_process_func(images,K)
 
         outfile = self.outfile(v, frame)
         if not os.path.isdir(os.path.dirname(outfile)):

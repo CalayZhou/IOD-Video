@@ -49,8 +49,8 @@ class STA_Framework(nn.Module):
             output1 = self.branch(chunk)
             return [output1]
         elif  self.arch ==  'TDNresnet':
-            input_cat = torch.cat(input, dim=1)# B C*T  H W
-            chunk = self.backbone(input_cat)
+            #input_cat = torch.cat(input, dim=1)# B C*T  H W
+            chunk = self.backbone(input)
             output1 = self.branch(chunk)
             return [output1]
         else:

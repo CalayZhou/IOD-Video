@@ -107,8 +107,8 @@ class IOD_TDN_ResNet(nn.Module):
     def forward(self, inputpre):
         x_list = []
         for i in range(self.num_segments):
-            x = inputpre.clone()
-            x1, x2, x3, x4, x5 = x[:, i*3+0:i*3+3, :, :], x[:, i*3+3:i*3+6, :, :], x[:, i*3+6:i*3+9, :, :], x[:, i*3+9:i*3+12, :, :], x[:, i*3+12:i*3+15, :, :]
+            x1, x2, x3, x4, x5 = inputpre[i + 0].clone(), inputpre[i + 1].clone(), inputpre[i + 2].clone(), inputpre[
+                i + 3].clone(), inputpre[i + 4].clone()
             x_c5 = self.conv1_5(
                 self.avg_diff(torch.cat([x2 - x1, x3 - x2, x4 - x3, x5 - x4], 1).view(-1, 12, x2.size()[2], x2.size()[3])))
             x_diff = self.maxpool_diff(1.0 / 1.0 * x_c5)
