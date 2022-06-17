@@ -36,7 +36,7 @@ For the basic usage, You can simply install the following dependencies:
 ```bash
 conda create -n IOD python=3.9
 conda activate IOD
-conda install pytorch==1.8 torchvision cudatoolkit -c pytorch
+conda install pytorch=1.8 torchvision cudatoolkit -c pytorch
 pip install -r pip-list.txt
 ```
 Please refer to [Installation.md](./readme/Installation.md) for more information.
