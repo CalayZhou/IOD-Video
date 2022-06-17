@@ -128,37 +128,34 @@ class IOD_TDN_ResNet(nn.Module):
             x = self.apha * x + self.belta * x_diff
             x_list.append(x)
 
-        x0 = torch.cat(x_list, dim=0)# B*T C  H W
+        inputlist = [x_list[i].unsqueeze(2) for i in range(self.num_segments)]
+        input_cat = torch.cat(inputlist, dim=2)  # B C T H W
+        batch_size, c, t, h, w = input_cat.shape
+        input_cat = input_cat.view(batch_size * self.num_segments, c, t // self.num_segments, h, w)
+        x0 = input_cat.squeeze(2)
+
+        # x0 = torch.cat(input_cat, dim=0)# B*T C  H W
         x1 = self.layer2_bak(x0)
         x2 = self.layer3_bak(x1)
         x3 = self.layer4_bak(x2)
 
-        x0 = x0.unsqueeze(2)
-        x1 = x1.unsqueeze(2)
-        x2 = x2.unsqueeze(2)
-        x3 = x3.unsqueeze(2)
-        batch_size_new, c, t, h, w = x0.shape
-        x0 = x0.view( -1 , c, self.num_segments  , h, w)
-        batch_size_new, c, t, h, w = x1.shape
-        x1 = x1.view( -1 , c, self.num_segments  , h, w)
-        batch_size_new, c, t, h, w = x2.shape
-        x2 = x2.view( -1 , c, self.num_segments  , h, w)
-        batch_size_new, c, t, h, w = x3.shape
-        x3 = x3.view( -1 , c, self.num_segments  , h, w)
+        x0 = self.norm1(x0)
+        x1 = self.deconv2(x1)
+        x2 = self.deconv3(x2)
+        x3 = self.deconv4(x3)
 
-        x0_split = x0.split(1,dim = 2)
-        x1_split = x1.split(1,dim = 2)
-        x2_split = x2.split(1,dim = 2)
-        x3_split = x3.split(1,dim = 2)
-
-        x0_split_deconv = [self.norm1(x0_split[i].squeeze(2)) for i in range(len(x0_split))]
-        x1_split_deconv = [self.deconv2(x1_split[i].squeeze(2)) for i in range(len(x1_split))]
-        x2_split_deconv = [self.deconv3(x2_split[i].squeeze(2)) for i in range(len(x2_split))]
-        x3_split_deconv = [self.deconv4(x3_split[i].squeeze(2)) for i in range(len(x3_split))]
+        bt, c, h, w = x1.shape
+        batch_size = bt // self.num_segments
+        x0_split = x0.view(batch_size, c, -1, h, w).split(1, dim=2)
+        x1_split = x1.view(batch_size, c, -1, h, w).split(1, dim=2)
+        x2_split = x2.view(batch_size, c, -1, h, w).split(1, dim=2)
+        x3_split = x3.view(batch_size, c, -1, h, w).split(1, dim=2)
 
         x_output = []
         for i in range(self.num_segments):
-            map = torch.cat([x0_split_deconv[i],x1_split_deconv[i], x2_split_deconv[i], x3_split_deconv[i]], dim=1)
+            # map = torch.cat([x0_split_deconv[i],x1_split_deconv[i], x2_split_deconv[i], x3_split_deconv[i]], dim=1)
+            map = torch.cat(
+                [x0_split[i].squeeze(2), x1_split[i].squeeze(2), x2_split[i].squeeze(2), x3_split[i].squeeze(2)], dim=1)
             map = self.cat(map)
             map = self.cat_bn(map)
             map = self.cat_act(map)
