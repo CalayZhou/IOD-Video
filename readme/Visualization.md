@@ -8,7 +8,7 @@ Put the video sample in the path ``./src_IOD/vis/demo_video/xxxx.avi``. The 001_
 
 1.2 models
 
-Since the 001_wild_static_vague.avi is in the test list of split 3 (Split3_testlist.txt), download [TEA_STA_K8S3_model_last.pth](https://drive.google.com/file/d/1MZBYKeoOr6OCAJkLNyRpcuqWvx_PdOyP/view?usp=sharing) to `./experiment/result_model/TEA_STA_K8S3/TEA_STA_K8S3_model_last.pth`.
+Since the 001_wild_static_vague.avi is in the test list of split 3 (Split3_testlist.txt), download [TEA_STA_K8S3_model_last.pth](https://drive.google.com/file/d/1jMWSMgeQYzQO9LW5Dc7pLEC8IXzhUXDL/view?usp=sharing) to `./experiment/result_model/TEA_STA_K8S3/TEA_STA_K8S3_model_last.pth`.
 
 ## 2.Demo
 

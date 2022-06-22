@@ -61,7 +61,7 @@ Please refer to [Dataset.md](./readme/Dataset.md) for more information.
 
 ### 3.Visualization
 
-Download [TEA_STA_K8S3_model_last.pth](https://drive.google.com/file/d/1MZBYKeoOr6OCAJkLNyRpcuqWvx_PdOyP/view?usp=sharing) to `./src_IOD/experiment/result_model/TEA_STA_K8S3/TEA_STA_K8S3_model_last.pth` and then run
+Download [TEA_STA_K8S3_model_last.pth](https://drive.google.com/file/d/1jMWSMgeQYzQO9LW5Dc7pLEC8IXzhUXDL/view?usp=sharing) to `./src_IOD/experiment/result_model/TEA_STA_K8S3/TEA_STA_K8S3_model_last.pth` and then run
 
 ```bash
 cd src_IOD/vis
@@ -72,7 +72,7 @@ Please refer to [Dataset.md](./readme/Dataset.md) for more information.
 ### 4.Evaluation
 Download models from [Google Drive](https://drive.google.com/drive/folders/1n1VG_nWj5e57iKeJlVOJgs74lQe7q7hn?usp=sharing),
 [Baidu Cloud,(code:`buac`)](https://pan.baidu.com/s/1ddV-u5RXnAsKtM8f19W7DA ) and [NJU Box](https://box.nju.edu.cn/d/7d89bd4796ab486b9886/) and put them to the 
-right places. For example, put [TEA_STA_K8S1_model_last.pth](https://drive.google.com/file/d/1NECG8ML63tPEaH8D1U8diuyMSM6yncIc/view?usp=sharing) to `./src_IOD/experiment/result_model/TEA_STA_K8S1/TEA_STA_K8S1_model_last.pth` and run
+right places. For example, put [TEA_STA_K8S1_model_last.pth](https://drive.google.com/file/d/1SndXxRKm9qwDWmcvwI_cxbWbgoa6JP1o/view?usp=sharing) to `./src_IOD/experiment/result_model/TEA_STA_K8S1/TEA_STA_K8S1_model_last.pth` and run
 
 ~~~bash
 #inference

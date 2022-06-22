@@ -7,20 +7,20 @@ TEA |1 |  41.97% | 8.10% |  20.86% | 11.21% | 15.43% |[TEA_MOV_K8S1_model_last.p
 TEA |2 |  41.36% | 7.80% | 22.86% | 9.12% | 14.96% | [TEA_MOV_K8S2_model_last.pth](https://drive.google.com/file/d/1gEkKrCskuBozy02cNVwu1uo8h6Po9zmM/view?usp=sharing)
 TEA |3 |  43.24% | 10.08% |  25.18% | 9.51% |16.68% | [TEA_MOV_K8S3_model_last.pth](https://drive.google.com/file/d/1L-faMe_huC-NrdKblA7IbchuFJiEQi-7/view?usp=sharing)
 TEA |average |  42.19% | 8.66% |  22.97% | 9.95% | 15.69% |
-TEA+STloss| 1 | 45.35% | 8.73% | 22.70% | 12.02% | 16.60%| [TEA_STA_K8S1_model_last.pth](https://drive.google.com/file/d/1NECG8ML63tPEaH8D1U8diuyMSM6yncIc/view?usp=sharing)
-TEA+STloss| 2 | 41.33% | 7.40% | 23.27% | 9.01% | 14.94%| [TEA_STA_K8S2_model_last.pth](https://drive.google.com/file/d/1CriQ-bQNucpwCFnPlExqNrN_iiQe4hUI/view?usp=sharing)
-TEA+STloss| 3 | 48.90% | 11.93% | 27.47% | 11.75% | 19.21%| [TEA_STA_K8S3_model_last.pth](https://drive.google.com/file/d/1MZBYKeoOr6OCAJkLNyRpcuqWvx_PdOyP/view?usp=sharing)
-TEA+STloss |average |  45.19% | 9.35% | 24.48% | 10.93% | 16.92% |
+TEA+STloss| 1 | 45.69% | 9.15% | 23.08% | 11.92% | 16.89%| [TEA_STA_K8S1_model_last.pth](https://drive.google.com/file/d/1SndXxRKm9qwDWmcvwI_cxbWbgoa6JP1o/view?usp=sharing)
+TEA+STloss| 2 | 41.47% | 7.69% | 22.39% | 9.81% | 15.11%| [TEA_STA_K8S2_model_last.pth](https://drive.google.com/file/d/17D0cSsqs12IrHrnqOjyTglhunFyGwkBm/view?usp=sharing)
+TEA+STloss| 3 | 48.74% | 11.15% | 26.30% | 11.60% | 18.67%| [TEA_STA_K8S3_model_last.pth](https://drive.google.com/file/d/1jMWSMgeQYzQO9LW5Dc7pLEC8IXzhUXDL/view?usp=sharing)
+TEA+STloss |average |  45.30% | 9.33% | 23.92% | 11.11% | 16.89% |
 
 *Model name:  `methods\_(loss)\_K?_S?\_model_last.pth`*
 
-We set opt.offset_h_ratio and opt.offset_w_ratio to 1 for stable convergence when K is small, so TEA+STAloss is slightly different from the original paper.
+We set opt.offset_h_ratio and opt.offset_w_ratio to 18 for stable convergence when K is small, so TEA+STAloss is slightly different from the original paper.
 All these models can be downloaded from [Google Drive](https://drive.google.com/drive/folders/1n1VG_nWj5e57iKeJlVOJgs74lQe7q7hn?usp=sharing),
 [Baidu Cloud,(code:`buac`)](https://pan.baidu.com/s/1ddV-u5RXnAsKtM8f19W7DA ) and [NJU Box](https://box.nju.edu.cn/d/7d89bd4796ab486b9886/).
 The final AP is averaged over three splits.
 
 ## 2.Inference K=8 with TEA+STAloss and TEA
-Please train or download the above model to the ${PATH_TO_SAVE_MODEL}, for example, download [TEA_STA_K8S1_model_last.pth](https://drive.google.com/file/d/1dvJZ6IQ8P8wyjf4QnVinbr9R7gT-LRe8/view?usp=sharing) to `../experiment/result_model/TEA_STA_K8S2/TEA_STA_K8S2_model_last.pth`
+Please train or download the above model to the ${PATH_TO_SAVE_MODEL}, for example, download [TEA_STA_K8S1_model_last.pth](https://drive.google.com/file/d/1SndXxRKm9qwDWmcvwI_cxbWbgoa6JP1o/view?usp=sharing) to `../experiment/result_model/TEA_STA_K8S2/TEA_STA_K8S2_model_last.pth`
 and run
 
 **TEA+STAloss**:

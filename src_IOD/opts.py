@@ -138,8 +138,8 @@ class opts(object):
         #opt.std = [0.229, 0.224, 0.225]
 
         # the lower offset_h_ratio and offset_w_ratio set is helpful for the training stability when K is small
-        opt.offset_h_ratio = 1
-        opt.offset_w_ratio = 1
+        opt.offset_h_ratio = opt.resize_height//opt.down_ratio//4
+        opt.offset_w_ratio = opt.resize_width//opt.down_ratio//4
 
         opt.mean = [0.40789654, 0.44719302, 0.47026115]
         opt.std = [0.28863828, 0.27408164, 0.27809835]
