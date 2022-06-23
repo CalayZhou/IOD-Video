@@ -2,7 +2,7 @@
 
 ## 1.Dataset download
 You can preview the IOD-Video Dataset with [NJU Box](https://box.nju.edu.cn/d/654f74926166482fa569/), please contact Kailai Zhou (**calayzhou@smail.nju.edu.cn** or **DG21230090@smail.nju.edu.cn**) for the IOD-Video dataset. We will email back
-to you as soon as possible (no more than 24 hours for most cases). The download link will include NJU Box, Baidu Cloud and Google Driver.
+to you as soon as possible (no more than 24 hours for most cases). The download link will include NJU Box, Baidu Cloud and Google Drive.
 
 For better academic communication, your email format is encouraged to contain the following information:
 

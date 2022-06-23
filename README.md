@@ -67,7 +67,7 @@ Download [TEA_STA_K8S3_model_last.pth](https://drive.google.com/file/d/1jMWSMgeQ
 cd src_IOD/vis
 python3 vis_det.py  --vname 001_wild_static_vague.avi 
 ```
-Please refer to [Dataset.md](./readme/Dataset.md) for more information.
+Please refer to [Visualization.md](./readme/Visualization.md) for more information.
 
 ### 4.Evaluation
 Download models from [Google Drive](https://drive.google.com/drive/folders/1n1VG_nWj5e57iKeJlVOJgs74lQe7q7hn?usp=sharing),
