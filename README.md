@@ -2,7 +2,7 @@
 
 ## Insubstantial Object Detection
 
-[[PROJECT PAGE]](https://calayzhou.github.io/) [[PAPER Download]]() [[PPT]](./readme/IOD-Video.pdf) 
+[[PROJECT PAGE]](https://calayzhou.github.io/) [[PAPER Download]](https://arxiv.org/abs/2206.11459) [[PPT]](./readme/IOD-Video.pdf)
 
 >Pytorch implementation for CVPR 2022 paper "Explore Spatio-temporal Aggregation for Insubstantial Object Detection: Benchmark Dataset and Baseline".
 
