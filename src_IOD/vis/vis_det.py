@@ -47,7 +47,7 @@ class PrefetchDataset(torch.utils.data.Dataset):
         self.last_frame = frame
 
         images = [cv2.imread(self.imagefile(frame + i)).astype(np.float32) for i in range(self.opt.K)]
-        images = self.pre_process(images)
+        images = self.pre_process(images,self.opt.K)
 
         outfile = self.outfile(frame)
         if not os.path.isdir(os.path.dirname(outfile)):
