@@ -22,7 +22,7 @@ We endeavor on a rarely explored task named Insubstantial Object Detection (IOD)
 ## IOD-Video dataset
 
 Accordingly, it is far more challenging to distinguish insubstantial objects in a single static frame and the collaborative representation of spatial and temporal information is crucial. Thus, we construct an IOD-Video dataset comprised of 600 videos (141,017 frames) covering various distances, sizes, visibility, and scenes captured by different spectral ranges.
-You can preview the IOD-Video Dataset with [NJU Box](https://box.nju.edu.cn/d/654f74926166482fa569/) and download it from [dataset pages](https://calayzhou.github.io/2022/05/04/Dataset/). 
+You can apply for the download link of the IOD-Video Dataset from [dataset pages](https://calayzhou.github.io/2022/05/04/Dataset/). 
 
 <div align="center" style="width:image width px;">
   <img  src="images/IOD-Video_overview.png" width=720>
